@@ -28,9 +28,9 @@ const proxy = async (event) => {
   return {
     body: JSON.stringify(txt),
     headers: {
+      ...r.headers,
       'Access-Control-Allow-Credentials': true,
-      'Access-Control-Allow-Origin': '*',
-      'Content-Type': headers['Content-Type']
+      'Access-Control-Allow-Origin': '*'
     },
     statusCode: r.status
   };
