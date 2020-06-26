@@ -1,0 +1,31 @@
+{
+  "name": "@dylanarmstrong/proxy",
+  "version": "1.0.0",
+  "description": "cors proxy",
+  "main": "handler.js",
+  "scripts": {
+    "local": "serverless offline",
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dylanarmstrong/proxy.git"
+  },
+  "keywords": [
+    "cors",
+    "proxy"
+  ],
+  "author": "Dylan Armstrong <dylan@dylan.is>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dylanarmstrong/proxy/issues"
+  },
+  "homepage": "https://github.com/dylanarmstrong/proxy#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.0",
+    "serverless": "^1.73.1"
+  },
+  "devDependencies": {
+    "serverless-offline": "^6.4.0"
+  }
+}
