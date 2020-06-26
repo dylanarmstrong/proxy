@@ -4,7 +4,7 @@
   "description": "cors proxy",
   "main": "handler.js",
   "scripts": {
-    "deploy": "serverless deploy -v",
+    "deploy": "PUBLIC_IP=`dig +short myip.opendns.com @resolver1.opendns.com` serverless deploy -v",
     "lint": "eslint handler.js",
     "local": "serverless offline"
   },
@@ -24,7 +24,8 @@
   "homepage": "https://github.com/dylanarmstrong/proxy#readme",
   "dependencies": {
     "node-fetch": "^2.6.0",
-    "serverless": "^1.73.1"
+    "serverless": "^1.73.1",
+    "serverless-resource-policy": "^1.0.4"
   },
   "devDependencies": {
     "@dylanarmstrong/eslint-config": "^0.1.2",

@@ -1,13 +1,22 @@
 plugins:
   - serverless-offline
+  - serverless-resource-policy
 
 service: proxy
 
 provider:
   name: aws
   runtime: nodejs12.x
-  stage: dev
+  stage: 'dev'
   region: us-east-1
+
+custom:
+  serverless-resource-policy:
+    stage: ${self:provider.stage}
+    privateStages:
+      - dev
+    netblocks:
+      - ${env:PUBLIC_IP}
 
 functions:
   proxy:
