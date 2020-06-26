@@ -4,6 +4,11 @@ const fetch = require('node-fetch');
 
 const proxy = async event => {
   const { headers, httpMethod, queryStringParameters } = event;
+
+  if (!queryStringParameters) {
+    return { statusCode: 404 };
+  }
+
   const { url } = queryStringParameters;
 
   if (!url) {
