@@ -1,18 +1,16 @@
-'use strict';
-
 const fetch = require('node-fetch');
 
-const proxy = async event => {
+const proxy = async (event) => {
   const { headers, httpMethod, queryStringParameters } = event;
 
   if (!queryStringParameters) {
-    return { statusCode: 404 };
+    return { statusCode: 400 };
   }
 
   const { url } = queryStringParameters;
 
   if (!url) {
-    return { statusCode: 404 }
+    return { statusCode: 400 };
   }
 
   let host;
@@ -29,13 +27,13 @@ const proxy = async event => {
 
   return {
     body: JSON.stringify(txt),
-    statusCode: r.status,
     headers: {
       'Access-Control-Allow-Credentials': true,
       'Access-Control-Allow-Origin': '*',
       'Content-Type': headers['Content-Type']
-    }
+    },
+    statusCode: r.status
   };
 };
 
-module.exports = { proxy }; 
+module.exports = { proxy };
