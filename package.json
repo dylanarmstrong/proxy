@@ -4,8 +4,8 @@
   "description": "cors proxy",
   "main": "handler.js",
   "scripts": {
-    "local": "serverless offline",
-    "test": ""
+    "deploy": "serverless deploy -v",
+    "local": "serverless offline"
   },
   "repository": {
     "type": "git",
