@@ -17,6 +17,7 @@ custom:
       - dev
     netblocks:
       - ${env:PUBLIC_IP}
+      - 34.228.154.177
 
 functions:
   proxy:
