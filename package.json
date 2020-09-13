@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/dylanarmstrong/proxy#readme",
   "dependencies": {
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.1",
     "serverless": "^1.77.1",
     "serverless-resource-policy": "^1.0.4"
   },
