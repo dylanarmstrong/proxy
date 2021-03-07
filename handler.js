@@ -32,7 +32,7 @@ const proxy = async (event) => {
       'Access-Control-Allow-Credentials': true,
       'Access-Control-Allow-Origin': '*',
     },
-    statusCode: r.status,
+    statusCode: 200,
   };
 };
 

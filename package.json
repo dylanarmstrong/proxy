@@ -1,6 +1,6 @@
 {
   "name": "@dylanarmstrong/proxy",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "cors proxy",
   "main": "handler.js",
   "scripts": {
