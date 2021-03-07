@@ -30,9 +30,9 @@ const proxy = async (event) => {
     headers: {
       ...r.headers,
       'Access-Control-Allow-Credentials': true,
-      'Access-Control-Allow-Origin': '*'
+      'Access-Control-Allow-Origin': '*',
     },
-    statusCode: r.status
+    statusCode: r.status,
   };
 };
 
