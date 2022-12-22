@@ -31,6 +31,6 @@
     "@dylanarmstrong/eslint-config": "^0.2.7",
     "eslint": "^7.21.0",
     "eslint-plugin-import": "^2.22.0",
-    "serverless-offline": "^8.3.1"
+    "serverless-offline": "^12.0.3"
   }
 }
