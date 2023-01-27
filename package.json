@@ -24,7 +24,7 @@
   "homepage": "https://github.com/dylanarmstrong/proxy#readme",
   "dependencies": {
     "node-fetch": "^2.6.7",
-    "serverless": "^2.72.1",
+    "serverless": "^3.27.0",
     "serverless-resource-policy": "^1.0.4"
   },
   "devDependencies": {
