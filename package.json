@@ -24,13 +24,13 @@
   "homepage": "https://github.com/dylanarmstrong/proxy#readme",
   "dependencies": {
     "node-fetch": "^2.6.7",
-    "serverless": "^2.72.1",
+    "serverless": "^4.40.0",
     "serverless-resource-policy": "^1.0.4"
   },
   "devDependencies": {
-    "@dylanarmstrong/eslint-config": "^0.2.7",
-    "eslint": "^7.21.0",
-    "eslint-plugin-import": "^2.22.0",
+    "@dylanarmstrong/eslint-config": "^0.9.0",
+    "eslint": "^10.8.1",
+    "eslint-plugin-import": "^2.32.0",
     "serverless-offline": "^8.3.1"
   }
 }
